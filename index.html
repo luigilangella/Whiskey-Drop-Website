@@ -34,7 +34,7 @@
         </div>
     </nav>
     <article class="container">
-         <!--Alert-->
+        <!--Alert-->
         <div class="row hidden-xs">
             <div class="col-xs-12">
                 <div class="alert alert-warning">
@@ -48,7 +48,7 @@
                 <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="hidden-xs">€19.99</s><span class="visible-xs"><br></span> <strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
+                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>
             </div>
@@ -80,20 +80,20 @@
                     </div>
                 </div>
 
-                    <div class="col-xs-12 col-md-6">
-                        <div class="media">
-                            <div class="media-left hidden-xs">
-                                <img src="images/faccie_di_george_cloney.jpg" class="img-circle media-object" width="100px" height="100px"></img>
-                            </div>
-                            <div class="media-body">
-                                <blockquote class="quote">
-                                    <p>I haven't been sober for months!</p>
-                                    <footer>Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-                                </blockquote>
-                            </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="media">
+                        <div class="media-left hidden-xs">
+                            <img src="images/faccie_di_george_cloney.jpg" class="img-circle media-object" width="100px" height="100px"></img>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="quote">
+                                <p>I haven't been sober for months!</p>
+                                <footer>Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- /.quotes -->
 
@@ -133,6 +133,43 @@
         </section>
         <!-- /.features -->
     </article>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up for Whiskey Drop!</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Email">Email address</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Email">
+                            <p class="help-block">We'll never share your Email address with anyone.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                        </div>
+                       
+                       
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
